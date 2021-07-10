@@ -22,7 +22,7 @@ after_success:
   - docker push rahulpol/multi-server
   - docker push rahulpol/multi-worker
 deploy:
-  #   provider: elasticbeanstalk
+  provider: elasticbeanstalk
   region: 'us-east-2'
   app: 'multi-docker'
   env: 'MultiDocker-env'
